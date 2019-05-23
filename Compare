@@ -1,4 +1,13 @@
 def compare (string1,string2):
-    if string1==string2:
+    if type(string1) != str and type(string2) != str:
         return('0')
-        hello
+    elif string1 == string2:
+        return('1')
+    elif len(string1) > len(string2):
+        return('2')
+    elif string2 == 'learn':
+        return ('3')
+print(compare('200sd','2f00'))
+print(compare('леброн','леброн'))
+print(compare('леброн','брон'))
+print(compare('леброн','learn'))
