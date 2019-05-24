@@ -1,0 +1,12 @@
+#Цикл while: ask_user со словарём
+user_dict = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую", "Какие планы?": "Учиться" , "Пока": "Всего доброго"}
+
+def ask_user():
+    while True:
+        user_answer = input('Ввод пользователя: ')
+        if user_answer in user_dict:
+            print('Программа: {}'.format(user_dict[user_answer]))
+            break         
+ask_user()
+
+   
