@@ -1,1 +1,14 @@
-list = [{'school_class': '4a', 'scores': [3,4,4,5,2]}]
+gpa = [{'school_class': '4a', 'scores': [3,4,4,5,2]},{'school_class': '4b', 'scores': [3,2,4,5,2]},{'school_class': '4c', 'scores': [5,4,4,5,5]}
+,{'school_class': '4d', 'scores': [3,4,2,5,2]}]
+
+mark = 0
+summa = 0
+for grade in gpa:
+    mark += sum(grade['scores'])
+    summa += len(grade['scores'])
+    mean_mark = mark/summa
+    print('Средний бал в классе {} равен {}'.format(grade['school_class'], mean_mark))
+print('Средний бал по школе равен {}'.format(mark / summa))  
+
+
+
