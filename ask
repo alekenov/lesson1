@@ -1,0 +1,6 @@
+def ask_user():
+    while True:
+        user_answer = input('как дела? ')
+        if user_answer == 'хорошо':
+            break           
+ask_user()
